@@ -1,213 +1,274 @@
 <!DOCTYPE html>
-2
 <html lang="en">
-3
 <head>
-4
 <meta charset="UTF-8">
-5
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-6
+
 <title>Bodice CAD Generator</title>
-7
- 
-8
-<link.css
-9
- 
-10
+
+<link rel="stylesheet" href="style.css">
+
 </head>
-11
+
 <body>
-12
- 
-13
+
 <header>
-14
+
 <h1>Bodice CAD Generator</h1>
-15
-<p>Angela Kane Drafting System</p>
-16
+
+<p>
+Professional Pattern Drafting System
+</p>
+
 </header>
-17
- 
-18
+
 <div class="container">
-19
- 
-20
+
+<!-- LEFT PANEL -->
+
 <div class="input-panel">
-21
- 
-22
-<h2>Body Measurements</h2>
-23
- 
-24
-<label>Bust</label>
-25
-<input type="number" id="bust">
-26
- 
-27
-<label>Waist</label>
-28
-<input type="number" id="waist">
-29
- 
-30
-<label>Hip</label>
-31
-<input type="number" id="hip">
-32
- 
-33
-<label>Back Waist Length</label>
-34
-<input type="number" id="backWaist">
-35
- 
-36
-<label>Shoulder Length</label>
-37
-<input type="number" id="shoulder">
-38
- 
-39
-<label>Neck Circumference</label>
-40
-<input type="number" id="neck">
-41
- 
-42
+
 <h2>Units</h2>
-43
- 
-44
+
 <select id="units">
-45
-<option>Centimeters</option>
-46
-<option>Inches</option>
-47
+<option value="cm">Centimeters</option>
+<option value="in">Inches</option>
 </select>
-48
- 
-49
+
 <h2>Garment Type</h2>
-50
- 
-51
+
 <select id="garmentType">
-52
-<option>Foundation Block</option>
-53
+
+<option>Foundation Block (Sloper)</option>
+
 <option>Stretch Knit / Swimwear</option>
-54
+
 <option>Tailored Blouse / Fitted Daydress</option>
-55
+
 <option>Semi-Fitted Blouse</option>
-56
+
 <option>Casual Top</option>
-57
+
 <option>Loose Tunic</option>
-58
+
 <option>Oversized Garment</option>
-59
+
 <option>Custom Ease</option>
-60
+
 </select>
-61
- 
-62
+
 <h2>Fabric Type</h2>
-63
- 
-64
+
 <select id="fabricType">
-65
+
 <option>Stable Woven</option>
-66
+
 <option>Linen</option>
-67
+
 <option>Denim</option>
-68
+
 <option>Stretch Woven</option>
-69
+
 <option>Jersey Knit</option>
-70
+
 <option>Rib Knit</option>
-71
+
 <option>Athletic Knit</option>
-72
+
 <option>Swimwear Fabric</option>
-73
+
 </select>
-74
- 
-75
-<h2>Sleeves</h2>
-76
- 
-77
+
+<h2>Sleeve Options</h2>
+
 <select id="sleeveOption">
-78
+
 <option>Sleeved</option>
-79
+
 <option>Sleeveless</option>
-80
+
 </select>
-81
+
+<h2>Body Measurements</h2>
+
+<label>Bust</label>
+<input type="number" id="bust">
+
+<label>Waist</label>
+<input type="number" id="waist">
+
+<label>Hip</label>
+<input type="number" id="hip">
+
+<label>Neck Circumference</label>
+<input type="number" id="neck">
+
+<label>Shoulder Length</label>
+<input type="number" id="shoulderLength">
+
+<label>Back Waist Length</label>
+<input type="number" id="backWaist">
+
+<label>Waist To Hip</label>
+<input type="number" id="waistToHip">
+
+<label>Chest Width</label>
+<input type="number" id="chestWidth">
+
+<label>Back Width</label>
+<input type="number" id="backWidth">
+
+<h2>Sleeve Measurements</h2>
+
+<label>Top Arm</label>
+<input type="number" id="topArm">
+
+<label>Sleeve Length</label>
+<input type="number" id="sleeveLength">
+
+<label>Wrist</label>
+<input type="number" id="wrist">
+
+<h2>Ease Recommendations</h2>
  
-82
+<div id="easeRecommendations">
+ 
+<p><strong>Foundation Block:</strong> 0–2 cm bust ease</p>
+ 
+<p><strong>Stretch Knit / Swimwear:</strong> -5% to -10% negative ease</p>
+ 
+<p><strong>Tailored Blouse:</strong> 5 cm bust ease</p>
+ 
+<p><strong>Semi-Fitted:</strong> 7–10 cm bust ease</p>
+ 
+<p><strong>Casual Top:</strong> 10–15 cm bust ease</p>
+ 
+<p><strong>Loose Tunic:</strong> 15–25 cm bust ease</p>
+ 
+<p><strong>Oversized:</strong> 25–40 cm bust ease</p>
+ 
+</div>
+
+<h2>Ease Settings</h2>
+
+<label>Bust Ease</label>
+<input type="number" id="bustEase">
+
+<label>Waist Ease</label>
+<input type="number" id="waistEase">
+
+<label>Hip Ease</label>
+<input type="number" id="hipEase">
+
+<h2>Printing Options</h2>
+
+<select id="paperSize">
+
+<option>A4 Tiled</option>
+
+<option>A3</option>
+
+<option>A2</option>
+
+<option>A1</option>
+
+<option>A0</option>
+
+<option>Letter</option>
+
+<option>Legal</option>
+
+</select>
+
+<h2>Display Options</h2>
+
+<label>
+<input type="checkbox" checked>
+Show Grid
+</label>
+
+<label>
+<input type="checkbox" checked>
+Show Construction Lines
+</label>
+
+<label>
+<input type="checkbox" checked>
+Show Bust Point X
+</label>
+
+<label>
+<input type="checkbox" checked>
+Show Dart Sewing Lines
+</label>
+
+<label>
+<input type="checkbox" checked>
+Show Grain Line
+</label>
+
+<label>
+<input type="checkbox" checked>
+Show Seam Allowance
+</label>
+
 <button id="generateBtn">
-83
- 
-84
 Generate Pattern
-85
- 
-86
 </button>
-87
- 
-88
+
 </div>
-89
- 
-90
-<div class="drawing-panel">
-91
- 
-92
+
+<!-- RIGHT PANEL -->
+
+<div class="preview-panel">
+
 <h2>Pattern Preview</h2>
-93
- 
-94
+
 <svg
-95
 id="patternCanvas"
-96
-width="1000"
-97
-height="800">
-98
+width="1200"
+height="900">
 </svg>
-99
- 
-100
+
+<div class="print-info">
+
+<h3>Print Calibration</h3>
+
+<p>
+1" × 1" Test Square
+</p>
+
+<p>
+5cm × 5cm Test Square
+</p>
+
+<p>
+PRINT AT 100%
+</p>
+
+<p>
+DO NOT FIT TO PAGE
+</p>
+
 </div>
-101
- 
-102
+
+<div class="analysis-panel">
+
+<h3>Pattern Analysis</h3>
+
+<div id="analysis">
+
+Pattern information will appear here.
+
 </div>
-103
- 
-104
+
+</div>
+
+</div>
+
+</div>
+
 main.jsscript>
-105
- 
-106
+
 </body>
-107
 </html>
