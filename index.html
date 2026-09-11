@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+2
+<html lang="en">
+3
+<head>
+4
+<meta charset="UTF-8">
+5
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+6
+<title>Bodice CAD Generator</title>
+7
+ 
+8
+<link.css
+9
+ 
+10
+</head>
+11
+<body>
+12
+ 
+13
+<header>
+14
+<h1>Bodice CAD Generator</h1>
+15
+<p>Angela Kane Drafting System</p>
+16
+</header>
+17
+ 
+18
+<div class="container">
+19
+ 
+20
+<div class="input-panel">
+21
+ 
+22
+<h2>Body Measurements</h2>
+23
+ 
+24
+<label>Bust</label>
+25
+<input type="number" id="bust">
+26
+ 
+27
+<label>Waist</label>
+28
+<input type="number" id="waist">
+29
+ 
+30
+<label>Hip</label>
+31
+<input type="number" id="hip">
+32
+ 
+33
+<label>Back Waist Length</label>
+34
+<input type="number" id="backWaist">
+35
+ 
+36
+<label>Shoulder Length</label>
+37
+<input type="number" id="shoulder">
+38
+ 
+39
+<label>Neck Circumference</label>
+40
+<input type="number" id="neck">
+41
+ 
+42
+<h2>Units</h2>
+43
+ 
+44
+<select id="units">
+45
+<option>Centimeters</option>
+46
+<option>Inches</option>
+47
+</select>
+48
+ 
+49
+<h2>Garment Type</h2>
+50
+ 
+51
+<select id="garmentType">
+52
+<option>Foundation Block</option>
+53
+<option>Stretch Knit / Swimwear</option>
+54
+<option>Tailored Blouse / Fitted Daydress</option>
+55
+<option>Semi-Fitted Blouse</option>
+56
+<option>Casual Top</option>
+57
+<option>Loose Tunic</option>
+58
+<option>Oversized Garment</option>
+59
+<option>Custom Ease</option>
+60
+</select>
+61
+ 
+62
+<h2>Fabric Type</h2>
+63
+ 
+64
+<select id="fabricType">
+65
+<option>Stable Woven</option>
+66
+<option>Linen</option>
+67
+<option>Denim</option>
+68
+<option>Stretch Woven</option>
+69
+<option>Jersey Knit</option>
+70
+<option>Rib Knit</option>
+71
+<option>Athletic Knit</option>
+72
+<option>Swimwear Fabric</option>
+73
+</select>
+74
+ 
+75
+<h2>Sleeves</h2>
+76
+ 
+77
+<select id="sleeveOption">
+78
+<option>Sleeved</option>
+79
+<option>Sleeveless</option>
+80
+</select>
+81
+ 
+82
+<button id="generateBtn">
+83
+ 
+84
+Generate Pattern
+85
+ 
+86
+</button>
+87
+ 
+88
+</div>
+89
+ 
+90
+<div class="drawing-panel">
+91
+ 
+92
+<h2>Pattern Preview</h2>
+93
+ 
+94
+<svg
+95
+id="patternCanvas"
+96
+width="1000"
+97
+height="800">
+98
+</svg>
+99
+ 
+100
+</div>
+101
+ 
+102
+</div>
+103
+ 
+104
+main.jsscript>
+105
+ 
+106
+</body>
+107
+</html>
