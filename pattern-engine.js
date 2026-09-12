@@ -78,22 +78,19 @@ class PatternEngine {
                 break;
         }
 
-        bustEase *= modifier;
-        waistEase *= m*difier;
-        hipEase *= modifie*;
+bustEase *= modifier;
+waistEase *= modifier;
+hipEase *= modifier;
 
-        const sideSeamExpansion*=
-            bustEase / 4;
+const sideSeamExpansion = bustEase / 4;
 
-     *  const armholeDrop =
-            *ideSeamExpansion / 2;
+const armholeDrop = sideSeamExpansion / 2;
 
-        let*sleeveAdjustment = 0;
+let sleeveAdjustment = 0;
 
-        if(*leeveOption === "Sleeveless"){
-
-  *         sleeveAdjustment = -15;
-        }
+if (sleeveOption === "Sleeveless") {
+    sleeveAdjustment = -15;
+}
 
         return {
 
