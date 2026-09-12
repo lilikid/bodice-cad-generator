@@ -43,6 +43,45 @@ class BackBodice {
             top
         );
 
+       }
+
+    drawAcrossBackLine() {
+
+        this.draftingEngine.drawLine(
+            300,
+            220,
+            520,
+            220,
+            "#cc6600",
+            1
+        );
+
+    }
+
+    drawBustLine() {
+
+        this.draftingEngine.drawLine(
+            300,
+            290,
+            520,
+            290,
+            "#0066cc",
+            1
+        );
+
+    }
+
+    drawWaistLine() {
+
+        this.draftingEngine.drawLine(
+            300,
+            470,
+            520,
+            470,
+            "#009933",
+            1
+        );
+
     }
 
 }
