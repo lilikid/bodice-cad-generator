@@ -101,7 +101,7 @@ const height =
 drawNeckWidthGuide() {
 
     const neckWidth =
-        this.measurements.neck * 1.5;
+        this.measurements.neck * 2;
 
     this.draftingEngine.drawLine(
         300,
