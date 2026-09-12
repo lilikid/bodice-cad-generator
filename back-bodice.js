@@ -100,8 +100,8 @@ const height =
     }
 drawNeckWidthGuide() {
 
-    const neckWidth =
-        this.measurements.neck * 2;
+const neckWidth =
+    (this.measurements.neck / 5) * 10;
 
     this.draftingEngine.drawLine(
         300,
