@@ -16,7 +16,7 @@ class BackBodice {
         const top = 150;
 
 const width =
-    this.measurements.bust * 2;
+    this.measurements.bust * 4;
         console.log(
     "Bust:",
     this.measurements.bust
