@@ -160,9 +160,28 @@ document.addEventListener("DOMContentLoaded", () => {
     gridEngine.drawMetricGrid();
 
     gridEngine.drawCalibrationBoxes();
-    const backBodice =
+    const measurements = {
+
+    bust:
+        Number(
+            document.getElementById(
+                "bust"
+            ).value
+        ) || 100,
+
+    backWaist:
+        Number(
+            document.getElementById(
+                "backWaist"
+            ).value
+        ) || 40
+
+};
+
+const backBodice =
     new BackBodice(
-        draftingEngine
+        draftingEngine,
+        measurements
     );
 
 backBodice.drawDraftingRectangle();
