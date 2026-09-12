@@ -142,7 +142,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
             <strong>Hip Ease:</strong>
             ${hipEase.value}
-        `;
+                `;
     }
+
+    const draftingEngine =
+        new DraftingEngine(
+            "patternCanvas"
+        );
+
+    const gridEngine =
+        new GridEngine(
+            draftingEngine
+        );
+
+    draftingEngine.clear();
+
+    gridEngine.drawMetricGrid();
+
+    gridEngine.drawCalibrationBoxes();
 
 });
