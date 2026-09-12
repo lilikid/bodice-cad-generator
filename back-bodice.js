@@ -83,5 +83,16 @@ class BackBodice {
         );
 
     }
+    drawNeckWidthGuide() {
 
+        this.draftingEngine.drawLine(
+            300,
+            150,
+            360,
+            150,
+            "#cc0000",
+            2
+        );
+
+    }
 }
