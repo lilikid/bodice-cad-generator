@@ -116,16 +116,33 @@ const neckWidth =
 
         drawShoulderLine() {
 
-        this.draftingEngine.drawLine(
-            360,
-            150,
-            430,
-            185,
-            "#9900cc",
-            2
-        );
+drawShoulderLine() {
 
-    }
+    const shoulderLength =
+        this.measurements.shoulderLength * 10;
+    
+    console.log(
+    "Shoulder Length:",
+    this.measurements.shoulderLength
+);
+
+    this.draftingEngine.drawLine(
+        300 +
+        ((this.measurements.neck / 5) * 10),
+
+        150,
+
+        300 +
+        ((this.measurements.neck / 5) * 10) +
+        shoulderLength,
+
+        185,
+
+        "#9900cc",
+        2
+    );
+
+}
         drawUnderarmGuide() {
 
         this.draftingEngine.drawLine(
