@@ -98,18 +98,21 @@ const height =
         );
 
     }
-    drawNeckWidthGuide() {
+drawNeckWidthGuide() {
 
-        this.draftingEngine.drawLine(
-            300,
-            150,
-            360,
-            150,
-            "#cc0000",
-            2
-        );
+    const neckWidth =
+        this.measurements.neck * 1.5;
 
-    }
+    this.draftingEngine.drawLine(
+        300,
+        150,
+        300 + neckWidth,
+        150,
+        "#cc0000",
+        2
+    );
+
+}
 
         drawShoulderLine() {
 
