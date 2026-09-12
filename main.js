@@ -20,9 +20,10 @@ const generateBtn =
     const analysis =
         document.getElementById("analysis");
 
-    garmentType.addEventListener(
-        "change",
-        updateEaseRecommendations();
+garmentType.addEventListener(
+    "change",
+    updateEaseRecommendations
+);
  
 generatePattern();
 
