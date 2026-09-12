@@ -9,9 +9,6 @@ class GridEngine {
 
     drawMetricGrid() {
 
-        const svg =
-            this.draftingEngine.svg;
-
         const width = 1200;
         const height = 900;
 
@@ -21,16 +18,12 @@ class GridEngine {
                 x % 50 === 0;
 
             this.draftingEngine.drawLine(
-
                 x,
                 0,
                 x,
                 height,
-
                 major ? "#bbbbbb" : "#e5e5e5",
-
                 major ? 1.2 : 0.5
-
             );
 
         }
@@ -41,16 +34,12 @@ class GridEngine {
                 y % 50 === 0;
 
             this.draftingEngine.drawLine(
-
                 0,
                 y,
                 width,
                 y,
-
                 major ? "#bbbbbb" : "#e5e5e5",
-
                 major ? 1.2 : 0.5
-
             );
 
         }
@@ -71,35 +60,12 @@ class GridEngine {
                 "rect"
             );
 
-        inchBox.setAttribute(
-            "x",
-            20
-        );
-
-        inchBox.setAttribute(
-            "y",
-            20
-        );
-
-        inchBox.setAttribute(
-            "width",
-            96
-        );
-
-        inchBox.setAttribute(
-            "height",
-            96
-        );
-
-        inchBox.setAttribute(
-            "fill",
-            "none"
-        );
-
-        inchBox.setAttribute(
-            "stroke",
-            "black"
-        );
+        inchBox.setAttribute("x", 20);
+        inchBox.setAttribute("y", 20);
+        inchBox.setAttribute("width", 96);
+        inchBox.setAttribute("height", 96);
+        inchBox.setAttribute("fill", "none");
+        inchBox.setAttribute("stroke", "black");
 
         svg.appendChild(inchBox);
 
@@ -109,20 +75,15 @@ class GridEngine {
                 "rect"
             );
 
-        cmBox.setAttribute(
-            "x",
-            150
-        );
+        cmBox.setAttribute("x", 150);
+        cmBox.setAttribute("y", 20);
+        cmBox.setAttribute("width", 189);
+        cmBox.setAttribute("height", 189);
+        cmBox.setAttribute("fill", "none");
+        cmBox.setAttribute("stroke", "black");
 
-        cmBox.setAttribute(
-            "y",
-            20
-        );
+        svg.appendChild(cmBox);
 
-        cmBox.setAttribute(
-            "width",
-            189
-        );
+    }
 
-        cmBox.setAttribute(
-            "height",
+}
