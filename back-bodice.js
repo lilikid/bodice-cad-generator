@@ -17,8 +17,12 @@ class BackBodice {
         const left = 300;
         const top = 150;
 
-        const width = 220;
-        const height = 420;
+const width =
+    this.measurements.bust * 2;
+
+const height =
+    this.measurements.backWaist * 10;
+
 
         this.draftingEngine.drawLine(
             left,
