@@ -193,7 +193,14 @@ function generatePattern() {
             document.getElementById(
                 "backWaist"
             ).value
-        ) || 40
+        ) || 40,
+        
+        shoulderLength:
+    Number(
+        document.getElementById(
+            "shoulderLength"
+        ).value
+    ) || 12
 
 };
 
