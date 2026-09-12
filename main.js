@@ -160,5 +160,12 @@ document.addEventListener("DOMContentLoaded", () => {
     gridEngine.drawMetricGrid();
 
     gridEngine.drawCalibrationBoxes();
+    const backBodice =
+    new BackBodice(
+        draftingEngine
+    );
+
+backBodice.drawDraftingRectangle();
+
 
 });
