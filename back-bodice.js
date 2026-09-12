@@ -120,4 +120,16 @@ class BackBodice {
         );
 
     }
+        drawArmholeGuide() {
+
+        this.draftingEngine.drawLine(
+            430,
+            220,
+            500,
+            290,
+            "#ff00ff",
+            2
+        );
+
+    }
 }
