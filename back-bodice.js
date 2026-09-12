@@ -95,4 +95,28 @@ class BackBodice {
         );
 
     }
+        drawShoulderLine() {
+
+        this.draftingEngine.drawLine(
+            360,
+            150,
+            430,
+            185,
+            "#9900cc",
+            2
+        );
+
+    }
+        drawShoulderLine() {
+
+        this.draftingEngine.drawLine(
+            360,
+            150,
+            430,
+            185,
+            "#9900cc",
+            2
+        );
+
+    }
 }
