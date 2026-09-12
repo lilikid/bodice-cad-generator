@@ -95,6 +95,7 @@ class BackBodice {
         );
 
     }
+
         drawShoulderLine() {
 
         this.draftingEngine.drawLine(
@@ -107,14 +108,14 @@ class BackBodice {
         );
 
     }
-        drawShoulderLine() {
+        drawUnderarmGuide() {
 
         this.draftingEngine.drawLine(
-            360,
-            150,
             430,
-            185,
-            "#9900cc",
+            220,
+            430,
+            290,
+            "#ff6600",
             2
         );
 
