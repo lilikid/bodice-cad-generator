@@ -114,7 +114,6 @@ const neckWidth =
 
 }
 
-        drawShoulderLine() {
 
 drawShoulderLine() {
 
