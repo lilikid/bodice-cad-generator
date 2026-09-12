@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const generateBtn =
     document.getElementById(
         "generateBtn"
-    );
+    );Enable interactive pattern generation
 
     const fabricType =
         document.getElementById("fabricType");
@@ -181,6 +181,13 @@ function generatePattern() {
             ).value
         ) || 100,
 
+    neck:
+        Number(
+            document.getElementById(
+                "neck"
+            ).value
+        ) || 36,
+
     backWaist:
         Number(
             document.getElementById(
@@ -189,6 +196,7 @@ function generatePattern() {
         ) || 40
 
 };
+
 
 const backBodice =
     new BackBodice(
