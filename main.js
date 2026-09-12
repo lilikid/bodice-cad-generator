@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
 const generateBtn =
     document.getElementById(
         "generateBtn"
-    );Enable interactive pattern generation
+    );
 
-    const fabricType =
-        document.getElementById("fabricType");
+const fabricType =
+    document.getElementById("fabricType");
 
     const bustEase =
         document.getElementById("bustEase");
