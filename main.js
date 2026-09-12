@@ -166,6 +166,12 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 backBodice.drawDraftingRectangle();
+ 
+backBodice.drawAcrossBackLine();
+ 
+backBodice.drawBustLine();
+ 
+backBodice.drawWaistLine();
 
 
 });
