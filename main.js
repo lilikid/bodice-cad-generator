@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const garmentType =
-        document.getElementById("garmentType");
+const generateBtn =
+    document.getElementById(
+        "generateBtn"
+    );
 
     const fabricType =
         document.getElementById("fabricType");
@@ -29,6 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     updateEaseRecommendations();
+    generateBtn.addEventListener(
+    "click",
+    () => {
+
+        location.reload();
+
+    }
+);
 
     function updateEaseRecommendations() {
 
