@@ -22,8 +22,9 @@ const generateBtn =
 
     garmentType.addEventListener(
         "change",
-        updateEaseRecommendations
-    );
+        updateEaseRecommendations();
+ 
+generatePattern();
 
     fabricType.addEventListener(
         "change",
@@ -35,7 +36,7 @@ const generateBtn =
     "click",
     () => {
 
-        location.reload();
+        generatePattern();
 
     }
 );
@@ -154,7 +155,7 @@ const generateBtn =
             ${hipEase.value}
                 `;
     }
-
+function generatePattern() {
     const draftingEngine =
         new DraftingEngine(
             "patternCanvas"
@@ -207,5 +208,6 @@ backBodice.drawUnderarmGuide();
 backBodice.drawArmholeGuide();
 backBodice.drawBackNeckGuide();
 
-   
+
+}
 });
