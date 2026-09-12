@@ -172,6 +172,6 @@ backBodice.drawAcrossBackLine();
 backBodice.drawBustLine();
  
 backBodice.drawWaistLine();
-
+backBodice.drawNeckWidthGuide();
 
 });
