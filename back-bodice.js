@@ -119,11 +119,6 @@ drawShoulderLine() {
 
     const shoulderLength =
         this.measurements.shoulderLength * 10;
-    
-    console.log(
-    "Shoulder Length:",
-    this.measurements.shoulderLength
-);
 
     this.draftingEngine.drawLine(
         300 +
