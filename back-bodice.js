@@ -1,7 +1,5 @@
 class BackBodice {
 
-class BackBodice {
-
     constructor(draftingEngine, measurements) {
 
         this.draftingEngine =
