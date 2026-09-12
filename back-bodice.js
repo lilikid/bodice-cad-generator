@@ -1,9 +1,14 @@
 class BackBodice {
 
-    constructor(draftingEngine) {
+class BackBodice {
+
+    constructor(draftingEngine, measurements) {
 
         this.draftingEngine =
             draftingEngine;
+
+        this.measurements =
+            measurements;
 
     }
 
