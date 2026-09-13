@@ -21,7 +21,7 @@ const width =
     this.measurements.bust * 4;
 
 const height =
-    this.measurements.backWaist * 10;
+    this.measurements.backWaist * BackBodice.SCALE;
         
         this.draftingEngine.drawLine(
             left,
@@ -90,7 +90,7 @@ drawWaistLine() {
 
     const waistY =
         150 +
-        (this.measurements.backWaist * 10);
+        (this.measurements.backWaist * BackBodice.SCALE);
 
     this.draftingEngine.drawLine(
         300,
@@ -106,7 +106,7 @@ drawWaistLine() {
 drawNeckWidthGuide() {
 
 const neckWidth =
-    (this.measurements.neck / 5) * 10;
+    (this.measurements.neck / 5) * BackBodice.SCALE;
 
     this.draftingEngine.drawLine(
         300,
@@ -123,7 +123,7 @@ const neckWidth =
 drawShoulderLine() {
 
     const shoulderLength =
-        this.measurements.shoulderLength * 10;
+        this.measurements.shoulderLength * BackBodice.SCALE;
 
     this.draftingEngine.drawLine(
         300 +
