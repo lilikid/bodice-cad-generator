@@ -142,18 +142,23 @@ drawShoulderLine() {
     );
 
 }
-        drawUnderarmGuide() {
+  drawUnderarmGuide() {
 
-        this.draftingEngine.drawLine(
-            430,
-            220,
-            430,
-            290,
-            "#ff6600",
-            2
-        );
+    const underarmX =
+        300 +
+        (this.measurements.backWidth *
+        BackBodice.SCALE);
 
-    }
+    this.draftingEngine.drawLine(
+        underarmX,
+        220,
+        underarmX,
+        290,
+        "#ff6600",
+        2
+    );
+
+}
         drawArmholeGuide() {
 
         this.draftingEngine.drawLine(
