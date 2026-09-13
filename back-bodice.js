@@ -60,18 +60,26 @@ const height =
 
        }
 
-    drawAcrossBackLine() {
+drawAcrossBackLine() {
 
-        this.draftingEngine.drawLine(
-            300,
-            220,
-            520,
-            220,
-            "#cc6600",
-            1
-        );
+    const backWidth =
+        this.measurements.backWidth * 10;
 
-    }
+    console.log(
+        "Back Width:",
+        this.measurements.backWidth
+    );
+
+    this.draftingEngine.drawLine(
+        300,
+        220,
+        300 + backWidth,
+        220,
+        "#cc6600",
+        1
+    );
+
+}
 
     drawBustLine() {
 
