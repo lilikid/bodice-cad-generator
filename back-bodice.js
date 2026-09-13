@@ -20,12 +20,7 @@ const width =
 
 const height =
     this.measurements.backWaist * 10;
-        console.log(
-    "Back Waist:",
-    this.measurements.backWaist
-);
-
-
+        
         this.draftingEngine.drawLine(
             left,
             top,
@@ -60,11 +55,6 @@ drawAcrossBackLine() {
 
     const backWidth =
         this.measurements.backWidth * 10;
-
-    console.log(
-        "Back Width:",
-        this.measurements.backWidth
-    );
 
     this.draftingEngine.drawLine(
         300,
