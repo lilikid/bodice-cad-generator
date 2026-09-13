@@ -243,6 +243,20 @@ hipEase:
         ).value
     ) || 0,
 
+        waist:
+    Number(
+        document.getElementById(
+            "waist"
+        ).value
+    ) || 80,
+
+chestWidth:
+    Number(
+        document.getElementById(
+            "chestWidth"
+        ).value
+    ) || 34
+        
 };
 
 
