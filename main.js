@@ -195,6 +195,13 @@ function generatePattern() {
             ).value
         ) || 40,
         
+        backWidth:
+    Number(
+        document.getElementById(
+            "backWidth"
+        ).value
+    ) || 38,
+        
         shoulderLength:
     Number(
         document.getElementById(
