@@ -67,18 +67,27 @@ drawAcrossBackLine() {
 
 }
 
-    drawBustLine() {
+drawBustLine() {
 
-        this.draftingEngine.drawLine(
-            300,
-            290,
-            520,
-            290,
-            "#0066cc",
-            1
-        );
+    const bustY =
+        150 +
+        (this.measurements.backWaist * 4);
 
-    }
+    console.log(
+        "Bust Y:",
+        bustY
+    );
+
+    this.draftingEngine.drawLine(
+        300,
+        bustY,
+        520,
+        bustY,
+        "#0066cc",
+        1
+    );
+
+}
 
 drawWaistLine() {
 
