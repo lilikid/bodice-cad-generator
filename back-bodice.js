@@ -1,5 +1,7 @@
 class BackBodice {
 
+        static SCALE = 10;
+    
     constructor(draftingEngine, measurements) {
 
         this.draftingEngine =
@@ -54,7 +56,7 @@ const height =
 drawAcrossBackLine() {
 
     const backWidth =
-        this.measurements.backWidth * 10;
+        this.measurements.backWidth * BackBodice.SCALE;
 
     this.draftingEngine.drawLine(
         300,
