@@ -18,10 +18,28 @@ class BackBodice {
         const top = 150;
 
 const width =
-    this.measurements.bust * 4;
+(
+    (
+        this.measurements.hip / 2
+    )
+    +
+    this.measurements.hipEase
+    +
+    8
+)
+*
+BackBodice.SCALE;
 
 const height =
-    this.measurements.backWaist * BackBodice.SCALE;
+(
+    this.measurements.backWaist
+    +
+    this.measurements.waistToHip
+    +
+    2.5
+)
+*
+BackBodice.SCALE;
         
         this.draftingEngine.drawLine(
             left,
@@ -71,9 +89,16 @@ drawAcrossBackLine() {
 
 drawBustLine() {
 
-    const bustY =
-        150 +
-        (this.measurements.backWaist * 4);
+const bustY =
+    150 +
+    (
+        (
+            this.measurements.backWaist / 2
+        )
+        + 1
+    )
+    *
+    BackBodice.SCALE;
 
     this.draftingEngine.drawLine(
         300,
@@ -88,9 +113,12 @@ drawBustLine() {
 
 drawWaistLine() {
 
-    const waistY =
-        150 +
-        (this.measurements.backWaist * BackBodice.SCALE);
+const waistY =
+    150 +
+    (
+        this.measurements.backWaist *
+        BackBodice.SCALE
+    );
 
     this.draftingEngine.drawLine(
         300,
@@ -106,7 +134,17 @@ drawWaistLine() {
 drawNeckWidthGuide() {
 
 const neckWidth =
-    (this.measurements.neck / 5) * BackBodice.SCALE;
+(
+    (
+        this.measurements.bust / 8
+    )
+    +
+    3
+)
+/
+2
+*
+BackBodice.SCALE;
 
     this.draftingEngine.drawLine(
         300,
