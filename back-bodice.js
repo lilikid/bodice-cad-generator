@@ -73,11 +73,6 @@ drawBustLine() {
         150 +
         (this.measurements.backWaist * 4);
 
-    console.log(
-        "Bust Y:",
-        bustY
-    );
-
     this.draftingEngine.drawLine(
         300,
         bustY,
