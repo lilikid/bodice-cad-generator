@@ -86,18 +86,23 @@ const height =
 
     }
 
-    drawWaistLine() {
+drawWaistLine() {
 
-        this.draftingEngine.drawLine(
-            300,
-            470,
-            520,
-            470,
-            "#009933",
-            1
-        );
+    const waistY =
+        150 +
+        (this.measurements.backWaist * 10);
 
-    }
+    this.draftingEngine.drawLine(
+        300,
+        waistY,
+        520,
+        waistY,
+        "#009933",
+        1
+    );
+
+}
+
 drawNeckWidthGuide() {
 
 const neckWidth =
