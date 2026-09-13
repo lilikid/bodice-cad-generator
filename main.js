@@ -207,7 +207,41 @@ function generatePattern() {
         document.getElementById(
             "shoulderLength"
         ).value
-    ) || 12
+    ) || 12,
+        hip:
+    Number(
+        document.getElementById(
+            "hip"
+        ).value
+    ) || 100,
+
+waistToHip:
+    Number(
+        document.getElementById(
+            "waistToHip"
+        ).value
+    ) || 22,
+
+bustEase:
+    Number(
+        document.getElementById(
+            "bustEase"
+        ).value
+    ) || 0,
+
+waistEase:
+    Number(
+        document.getElementById(
+            "waistEase"
+        ).value
+    ) || 0,
+
+hipEase:
+    Number(
+        document.getElementById(
+            "hipEase"
+        ).value
+    ) || 0,
 
 };
 
