@@ -1,14 +1,9 @@
 class BackBodice {
-        
-        static SCALE = 10;
-    
+
+    static SCALE = 10;
+
     constructor(draftingEngine, measurements) {
 
-                    getNapeY() {
-
-    return 150 + (2.5 * BackBodice.SCALE);
-
-}
         this.draftingEngine =
             draftingEngine;
 
@@ -16,6 +11,14 @@ class BackBodice {
             measurements;
 
     }
+
+    getNapeY() {
+
+        return 150 + (2.5 * BackBodice.SCALE);
+
+    }
+
+    drawDraftingRectangle() {
 
     drawDraftingRectangle() {
 
