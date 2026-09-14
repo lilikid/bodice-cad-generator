@@ -168,23 +168,38 @@ this.draftingEngine.drawLine(
 
 drawShoulderLine() {
 
+    const neckWidth =
+    (
+        (
+            this.measurements.bust / 8
+        )
+        +
+        3
+    )
+    /
+    2
+    *
+    BackBodice.SCALE;
+
     const shoulderLength =
-        this.measurements.shoulderLength * BackBodice.SCALE;
+        this.measurements.shoulderLength *
+        BackBodice.SCALE;
 
     this.draftingEngine.drawLine(
-        300 +
-        ((this.measurements.neck / 5) * 10),
 
-        150,
+        300 + neckWidth,
 
-        300 +
-        ((this.measurements.neck / 5) * 10) +
+        this.getNapeY(),
+
+        300 + neckWidth +
         shoulderLength,
 
-        185,
+        this.getNapeY() +
+        (3 * BackBodice.SCALE),
 
         "#9900cc",
         2
+
     );
 
 }
