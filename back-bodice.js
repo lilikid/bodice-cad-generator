@@ -79,14 +79,39 @@ BackBodice.SCALE;
 
 drawAcrossBackLine() {
 
-    const backWidth =
-        this.measurements.backWidth * BackBodice.SCALE;
+    const shoulderY =
+        this.getNapeY() +
+        (3 * BackBodice.SCALE);
+
+    const bustY =
+        150 +
+        (
+            (
+                this.measurements.backWaist / 2
+            )
+            + 1
+        )
+        *
+        BackBodice.SCALE;
+
+    const acrossBackY =
+        (shoulderY + bustY) / 2;
+
+    const acrossBackWidth =
+        (
+            (this.measurements.backWidth / 2)
+            + 0.5
+        )
+        *
+        BackBodice.SCALE;
 
     this.draftingEngine.drawLine(
         300,
-        220,
-        300 + backWidth,
-        220,
+        acrossBackY,
+
+        300 + acrossBackWidth,
+        acrossBackY,
+
         "#cc6600",
         1
     );
