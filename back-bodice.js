@@ -271,18 +271,49 @@ drawShoulderLine() {
     );
 
 }
-        drawArmholeGuide() {
+drawArmholeGuide() {
 
-        this.draftingEngine.drawLine(
-            430,
-            220,
-            500,
-            290,
-            "#ff00ff",
-            2
-        );
+    const shoulderY =
+        this.getNapeY() +
+        (3 * BackBodice.SCALE);
 
-    }
+    const bustY =
+        150 +
+        (
+            (
+                this.measurements.backWaist / 2
+            )
+            + 1
+        )
+        *
+        BackBodice.SCALE;
+
+    const acrossBackY =
+        (shoulderY + bustY) / 2;
+
+    const armholeGuideX =
+        300 +
+        (
+            (
+                this.measurements.backWidth / 2
+            )
+            + 0.5
+        )
+        *
+        BackBodice.SCALE;
+
+    this.draftingEngine.drawLine(
+        armholeGuideX,
+        shoulderY,
+
+        armholeGuideX,
+        bustY,
+
+        "#ff00ff",
+        2
+    );
+
+}
 drawBackNeckGuide() {
 
     const neckWidth =
