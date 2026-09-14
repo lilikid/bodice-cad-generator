@@ -20,8 +20,6 @@ class BackBodice {
 
     drawDraftingRectangle() {
 
-    drawDraftingRectangle() {
-
         const left = 300;
         const top = 150;
 
