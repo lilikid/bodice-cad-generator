@@ -230,16 +230,42 @@ drawShoulderLine() {
 }
   drawUnderarmGuide() {
 
-    const underarmX =
+    const shoulderY =
+        this.getNapeY() +
+        (3 * BackBodice.SCALE);
+
+    const bustY =
+        150 +
+        (
+            (
+                this.measurements.backWaist / 2
+            )
+            + 1
+        )
+        *
+        BackBodice.SCALE;
+
+    const acrossBackY =
+        (shoulderY + bustY) / 2;
+
+    const armholeGuideX =
         300 +
-        (this.measurements.backWidth *
-        BackBodice.SCALE);
+        (
+            (
+                this.measurements.backWidth / 2
+            )
+            + 0.5
+        )
+        *
+        BackBodice.SCALE;
 
     this.draftingEngine.drawLine(
-        underarmX,
-        220,
-        underarmX,
-        290,
+        armholeGuideX,
+        acrossBackY,
+
+        armholeGuideX,
+        bustY,
+
         "#ff6600",
         2
     );
