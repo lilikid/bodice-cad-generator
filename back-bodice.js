@@ -214,16 +214,31 @@ drawShoulderLine() {
         );
 
     }
-      drawBackNeckGuide() {
+drawBackNeckGuide() {
 
-        this.draftingEngine.drawLine(
-            300,
-            150,
-            330,
-            175,
-            "#cc0000",
-            2
-        );
+    const neckWidth =
+    (
+        (
+            this.measurements.bust / 8
+        )
+        +
+        3
+    )
+    /
+    2
+    *
+    BackBodice.SCALE;
 
-    }  
+    this.draftingEngine.drawLine(
+        300,
+        this.getNapeY(),
+
+        300 + neckWidth,
+        this.getNapeY() -
+        (2 * BackBodice.SCALE),
+
+        "#cc0000",
+        2
+    );
+
 }
