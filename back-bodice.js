@@ -1,5 +1,11 @@
 class BackBodice {
 
+        getNapeY() {
+
+    return 150 + (2.5 * BackBodice.SCALE);
+
+}
+        
         static SCALE = 10;
     
     constructor(draftingEngine, measurements) {
