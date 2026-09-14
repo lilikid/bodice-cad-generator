@@ -152,14 +152,16 @@ const neckWidth =
 *
 BackBodice.SCALE;
 
-    this.draftingEngine.drawLine(
-        300,
-        150,
-        300 + neckWidth,
-        150,
-        "#cc0000",
-        2
-    );
+this.draftingEngine.drawLine(
+    300,
+    this.getNapeY(),
+
+    300 + neckWidth,
+    this.getNapeY(),
+
+    "#cc0000",
+    2
+);
 
 }
 
