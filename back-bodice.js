@@ -487,4 +487,41 @@ drawBackNeckGuide() {
     );
 
 }
+
+drawBackArmholeCurve() {
+
+    const shoulderPoint =
+        this.getBackShoulderPoint();
+
+    const underarmPoint =
+        this.getBackUnderarmPoint();
+
+    const controlX =
+        (
+            shoulderPoint.x +
+            underarmPoint.x
+        ) / 2;
+
+    const controlY =
+        this.getAcrossBackY();
+
+    this.draftingEngine.drawQuadraticCurve(
+
+        shoulderPoint.x,
+        shoulderPoint.y,
+
+        controlX,
+        controlY,
+
+        underarmPoint.x,
+        underarmPoint.y,
+
+        "#000",
+        3
+
+    );
+
 }
+
+}
+
