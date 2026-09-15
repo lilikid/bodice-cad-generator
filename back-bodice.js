@@ -75,10 +75,81 @@ getBackUnderarmExtension() {
     );
 
 }
+getBackShoulderPoint() {
 
+    const neckWidth =
+    (
+        (
+            this.measurements.bust / 8
+        )
+        + 3
+    ) / 2;
 
-    drawDraftingRectangle() {
+    return {
+        x:
+            300 +
+            (
+                (neckWidth +
+                 this.measurements.shoulderLength + 1)
+                * BackBodice.SCALE
+            ),
 
+        y:
+            this.getShoulderY()
+    };
+
+}
+ getBackUnderarmPoint() {
+
+    return {
+
+        x:
+            this.getBackUnderarmPointX(),
+
+        y:
+            this.getBustY() +
+            (
+                this.getArmholeDrop()
+                *
+                BackBodice.SCALE
+            )
+
+    };
+
+}
+
+getBustY() {
+
+    return 150 +
+        (
+            (
+                this.measurements.backWaist / 2
+            )
+            + 1
+        )
+        *
+        BackBodice.SCALE;
+
+}
+
+getShoulderY() {
+
+    return this.getNapeY() +
+        (3 * BackBodice.SCALE);
+
+}
+
+getAcrossBackY() {
+
+    return (
+        this.getShoulderY()
+        +
+        this.getBustY()
+    ) / 2;
+
+}
+
+drawDraftingRectangle() {
         const left = 300;
         const top = 150;
 
