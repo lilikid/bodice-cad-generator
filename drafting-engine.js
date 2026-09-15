@@ -68,5 +68,46 @@ class DraftingEngine {
         this.svg.appendChild(line);
 
     }
+drawQuadraticCurve(
+    x1,
+    y1,
+    cx,
+    cy,
+    x2,
+    y2,
+    color = "#000",
+    width = 2
+) {
 
+    const path =
+        document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "path"
+        );
+
+    path.setAttribute(
+        "d",
+        `M ${x1} ${y1}
+         Q ${cx} ${cy}
+         ${x2} ${y2}`
+    );
+
+    path.setAttribute(
+        "fill",
+        "none"
+    );
+
+    path.setAttribute(
+        "stroke",
+        color
+    );
+
+    path.setAttribute(
+        "stroke-width",
+        width
+    );
+
+    this.svg.appendChild(path);
+
+}
 }
