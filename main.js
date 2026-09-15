@@ -278,6 +278,7 @@ backBodice.drawShoulderLine();
 backBodice.drawUnderarmGuide();
 backBodice.drawArmholeGuide();
 backBodice.drawBackNeckGuide();
+backBodice.drawBackArmholeCurve();
 
 
 }
