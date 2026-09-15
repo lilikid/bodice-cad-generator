@@ -318,6 +318,9 @@ drawShoulderLine() {
         *
         BackBodice.SCALE;
 
+    const underarmPointX =
+        this.getBackUnderarmPointX();
+
     this.draftingEngine.drawLine(
         armholeGuideX,
         acrossBackY,
@@ -329,7 +332,19 @@ drawShoulderLine() {
         2
     );
 
+    this.draftingEngine.drawLine(
+        armholeGuideX,
+        bustY,
+
+        underarmPointX,
+        bustY,
+
+        "#ff6600",
+        2
+    );
+
 }
+
 drawArmholeGuide() {
 
     const shoulderY =
