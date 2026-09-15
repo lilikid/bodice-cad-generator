@@ -15,8 +15,18 @@ class BackBodice {
     getNapeY() {
 
         return 150 + (2.5 * BackBodice.SCALE);
-
     }
+    getAdditionalBustEase() {
+
+    return this.measurements.bustEase - 5;
+
+}
+
+getSideSeamExpansion() {
+
+    return this.getAdditionalBustEase() / 4;
+
+}
 
     drawDraftingRectangle() {
 
