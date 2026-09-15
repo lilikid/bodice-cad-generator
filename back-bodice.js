@@ -27,6 +27,55 @@ getSideSeamExpansion() {
     return this.getAdditionalBustEase() / 4;
 
 }
+    getArmholeDrop() {
+
+    const additionalEase =
+        this.getAdditionalBustEase();
+
+    if (additionalEase > 3) {
+
+        return this.getSideSeamExpansion() / 2;
+
+    }
+
+    return 0;
+
+}
+
+getBackUnderarmExtension() {
+
+    const additionalEase =
+        this.getAdditionalBustEase();
+
+    return 5 +
+        (additionalEase / 4);
+
+}
+    getBackUnderarmPointX() {
+
+    const armholeGuideX =
+        300 +
+        (
+            (
+                this.measurements.backWidth / 2
+            )
+            + 0.5
+        )
+        *
+        BackBodice.SCALE;
+
+    return (
+        armholeGuideX
+        +
+        (
+            this.getBackUnderarmExtension()
+            *
+            BackBodice.SCALE
+        )
+    );
+
+}
+
 
     drawDraftingRectangle() {
 
